@@ -6,15 +6,15 @@ import ToggleButton from '@components/common/ToggleButton';
 import Mapa from '@images/mapa.jpg';
 
 const CATEGORY_COLORS = {
-  Calzado: 'bg-red-500',
-  Comidas: 'bg-blue-500',
-  'Electrónicos y telefonia': 'bg-[#fcc52a]',
-  Entretenimiento: 'bg-[#8ea8db]',
-  'Ropa y accesorios': 'bg-[#fe679a]',
-  'Servicios, bancos y cajeros': 'bg-[#0eaf90]',
-  'Tiendas departamentales': 'bg-[#4a08a0]',
-  'Tiendas especializadas': 'bg-[#8397b0]',
-  'Ópticas, salud y belleza': 'bg-[#6aff00]',
+  Autoservicio: 'bg-red-500',
+  'Tiendas departamentales': 'bg-blue-500',
+  'Servicios, bancos y cajeros': 'bg-[#fcc52a]',
+  'Ropa y accesorios': 'bg-[#8ea8db]',
+  'Tiendas especializadas': 'bg-[#fe679a]',
+  Comidas: 'bg-[#0eaf90]',
+  Entretenimiento: 'bg-[#4a08a0]',
+  'Ópticas, salud y belleza': 'bg-[#8397b0]',
+  'Electrónicos y telefonía': 'bg-[#6aff00]',
   Otros: 'bg-gray-500',
 };
 
@@ -107,7 +107,7 @@ const GaleriaDirectorio: React.FC<Props> = ({ className, stores }) => {
       <div className='container mx-auto p-4'>
         <div className='flex flex-col justify-end sm:flex-row items-center mb-12 gap-4'>
           {/* TOGGLE */}
-          <div className='relative flex-none md:order-1'>
+          {/* <div className='relative flex-none md:order-1'>
             <ToggleButton
               labelOn='Mapa'
               labelOff='Tiendas'
@@ -116,7 +116,7 @@ const GaleriaDirectorio: React.FC<Props> = ({ className, stores }) => {
               onToggleOn={handleOnFunction}
               onToggleOff={handleOffFunction}
             />
-          </div>
+          </div> */}
           {/* SEARCH */}
           {viewMode === 'tiendas' && (
             <div className='relative flex-none  '>
